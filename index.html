@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+
+    <div class="top">
+        	
+    </div>
+    <div class="rate" id="investes">
+        <div class="benefits-title">
+            Франшиза от comments.ua
+            <p>Ми предлагаем вам следущие пакеты услуг:</p>
+        </div>
+        <div class="rate-block">
+            <div class="rate-item rate-item__first">
+                <img class="rate-item__img-stars-3" src="/img/3-stars.png" alt="">
+                <div class="rate-item__caption">
+                    OPTIONAL
+                </div>
+                <div class="rate-item__description rate-item--black-text">
+                    Включает роялити, а также опции на ваш выбор. Вибрав необходимые именно вам, вы можете самостоятельно сформировать редакцію в вашем регионе...
+                </div>
+                <div class="calc-button">
+                    Подсчитать стоимость
+                </div>
+            </div>
+        
+            <div class="rate-item rate-item__second">
+                <img class="rate-item__img-stars-5" src="/img/5-stars.png" alt="">
+                <div class="rate-item__caption rate-item--white-text">
+                    SUPER MEDIA
+                </div>
+                <div class="rate-item__description rate-item--white-text">
+                Включает роялити и максимальную техническую Поддержку. Вам остается сформировать политику вашей редакции и начать работу.
+                </div>
+            </div>
+        </div>
+        <div class="block-calc">
+            <div class="btn-close-calc">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="block-calc__row block-calc__row--gray">
+                <div class="block-calc__col ">
+                    <div class="block-calc__icon">
+                        <img src="img/img-1.png" alt="">
+                    </div>
+                    <div class="block-calc__caption">
+                        Роялити
+                    </div>
+                </div>
+                <div class="block-calc__col">
+                    <label class="container-input">
+                        <input class="checkbox-input" type="checkbox" id="input-check-0" onchange="totalPrice()">
+                        <span class="checkbox-custom"></span>
+                        <label  class="input-check__deactive"  for="input-check-0"></label>
+                    </label>
+                   
+                    <input type="range" class="input-range" id="range0" min="0" max="1000" step="1" value="0" disabled> 
+                    <span class="label" id="output0">
+                        1000
+                    </span>
+                    <div class="price-category">
+                        5000 &#8372 - 50 000 &#8372
+                    </div>
+                </div>
+            </div>
+            <div class="block-calc__row ">
+                <div class="block-calc__col ">
+                    <div class="block-calc__icon">
+                        <img src="img/img-2.png" alt="">
+                    </div>
+                    <div class="block-calc__caption">
+                        Подбор Журналистов
+                    </div>
+                </div>
+                <div class="block-calc__col">
+                    <label class="container-input">
+                        <input class="checkbox-input" type="checkbox" id="input-check-1"  onchange="totalPrice()">
+                        <span class="checkbox-custom"></span>
+                        <label  class="input-check__deactive"  for="input-check-0"></label>
+                    </label>
+                    <div class="price-category">
+                        10 000 &#8372
+                    </div>
+                </div>
+            </div>
+            <div class="block-calc__row block-calc__row--gray">
+                <div class="block-calc__col ">
+                    <div class="block-calc__icon">
+                        <img src="img/img-3.png" alt="">
+                    </div>
+                    <div class="block-calc__caption">
+                        Главный редактор
+                    </div>
+                </div>
+                <div class="block-calc__col">
+                    <label class="container-input">
+                        <input class="checkbox-input" type="checkbox" id="input-check-2" onchange="totalPrice()">
+                        <span class="checkbox-custom"></span>
+                        <label  class="input-check__deactive"></label>
+                    </label>
+                    <input type="range"  class="input-range" id="range1" min="0" max="1000" step="1" value="0" disabled> 
+                    <output class="label" id="output1">
+                        1000
+                    </output>
+                    <div class="price-category">
+                        15000 &#8372 - 30 000 &#8372
+                    </div>
+                </div>
+            </div>
+            <div class="block-calc__row">
+                <div class="block-calc__col ">
+                    <div class="block-calc__icon">
+                        <img src="img/img-4.png" alt="">
+                    </div>
+                    <div class="block-calc__caption">
+                        Журналист
+                    </div>
+                </div>
+                <div class="block-calc__col">
+                    <label class="container-input">
+                        <input class="checkbox-input" type="checkbox" id="input-check-3" onchange="totalPrice()">
+                        <span class="checkbox-custom"></span>
+                        <label  class="input-check__deactive"  for="input-check-3"></label>
+                    </label>
+                    <input type="range"  class="input-range" id="range2" min="0" max="1000" step="1" value="0" disabled> 
+                    <output class="label" id="output2">
+                        1000
+                    </output>
+                    <div class="price-category">
+                        10 000 &#8372 - 18 000 &#8372
+                    </div>
+                </div>
+            </div>
+            <div class="block-calc__row block-calc__row--gray">
+                <div class="block-calc__col ">
+                    <div class="block-calc__icon">
+                        <img src="img/img-5.png" alt="">
+                    </div>
+                    <div class="block-calc__caption">
+                        Кореспондент
+                    </div>
+                </div>
+                <div class="block-calc__col">
+                    <label class="container-input">
+                        <input class="checkbox-input" type="checkbox" id="input-check-4" onchange="totalPrice()">
+                        <span class="checkbox-custom"></span>
+                        <label  class="input-check__deactive"  for="input-check-0"></label>
+                    </label>
+                    <input type="range" class="input-range" id="range3" min="0" max="1000" step="1" value="0" disabled> 
+                    <output class="label" id="output3">
+                        1000
+                    </output>
+                    <div class="price-category">
+                        10 000 &#8372 - 20 000 &#8372
+                    </div>
+                </div>
+            </div>
+            <div class="block-calc__row ">
+                <div class="block-calc__col ">
+                    <div class="block-calc__icon">
+                        <img src="img/img-6.png" alt="">
+                    </div>
+                    <div class="block-calc__caption">
+                        Дизайнер
+                    </div>
+                </div>
+                <div class="block-calc__col">
+                    <label class="container-input">
+                        <input class="checkbox-input" type="checkbox" id="input-check-5" onchange="totalPrice()">
+                        <span class="checkbox-custom"></span>
+                        <label  class="input-check__deactive"  for="input-check-5"></label>
+                    </label>
+                    <div class="price-category">
+                        >500 &#8372
+                    </div>
+                </div>
+            </div>
+            <div class="block-calc__row block-calc__row--gray">
+                <div class="block-calc__col ">
+                    <div class="block-calc__icon">
+                        <img src="img/img-7.png" alt="">
+                    </div>
+                    <div class="block-calc__caption">
+                        SEO-оптимізація сайту
+                    </div>
+                </div>
+                <div class="block-calc__col">
+                    <label class="container-input">
+                        <input class="checkbox-input" type="checkbox" id="input-check-6" onchange="totalPrice()">
+                        <span class="checkbox-custom"></span>
+                        <label  class="input-check__deactive"  for="input-check-6"></label>
+                    </label>
+    
+                    <div class="price-category">
+                        >15 000 &#8372
+                    </div>
+                </div>
+            </div>
+            <div class="block-calc__row ">
+                <div class="block-calc__col ">
+                    <div class="block-calc__icon">
+                        <img src="img/img-8.png" alt="">
+                    </div>
+                    <div class="block-calc__caption">
+                        Реферальный трафик
+                    </div>
+                </div>
+                <div class="block-calc__col">
+                    <label class="container-input">
+                        <input class="checkbox-input" type="checkbox" id="input-check-7" onchange="totalPrice()">
+                        <span class="checkbox-custom"></span>
+                        <label  class="input-check__deactive"  for="input-check-7"></label>
+                    </label>
+                    <div class="price-category">
+                       <p>За 1000 переходов</p> 1200 &#8372
+                    </div>
+                </div>
+            </div>
+            <div class="block-calc__row block-calc__row--gray">
+                <div class="block-calc__col ">
+                    <div class="block-calc__icon">
+                        <img src="img/img-9.png" alt="">
+                    </div>
+                    <div class="block-calc__caption">
+                        СММ і трафік з соціальних мереж
+                    </div>
+                </div>
+                <div class="block-calc__col">
+                    <label class="container-input">
+                        <input class="checkbox-input" type="checkbox" id="input-check-8" onchange="totalPrice()">
+                        <span class="checkbox-custom"></span>
+                        <label  class="input-check__deactive"  for="input-check-8"></label>
+                    </label>
+                    <div class="price-category">
+                        15 000 &#8372 - 20 000 &#8372
+                    </div>
+                </div>
+            </div>
+            <div class="block-calc__row ">
+                <div class="block-calc__col ">
+                    <div class="block-calc__icon">
+                        <img src="img/img-10.png" alt="">
+                    </div>
+                    <div class="block-calc__caption">
+                        Трафік з основного сайту comments.ua
+                    </div>
+                </div>
+                <div class="block-calc__col">
+                    <label class="container-input">
+                        <input class="checkbox-input" type="checkbox" id="input-check-9" onchange="totalPrice()">
+                        <span class="checkbox-custom"></span>
+                        <label  class="input-check__deactive"  for="input-check-9"></label>
+                    </label>
+                    <div class="price-category">
+                       <p>за 1000 переходов</p> 1000 &#8372
+                    </div>
+                </div>
+            </div>
+            <div class="block-calc__row block-calc__row--gray">
+                <div class="block-calc__col ">
+                    <div class="block-calc__icon">
+                        <img src="img/img-11.png" alt="">
+                    </div>
+                    <div class="block-calc__caption">
+                        Перевірка унікальності тексту як функція 
+вашого сайту
+                    </div>
+                </div>
+                <div class="block-calc__col">
+                    <label class="container-input">
+                        <input class="checkbox-input" type="checkbox" id="input-check-10" onchange="totalPrice()">
+                        <span class="checkbox-custom"></span>
+                        <label  class="input-check__deactive"  for="input-check-10"></label>
+                    </label>
+                    <div class="price-category">
+                        2 000 
+                    </div>
+                </div>
+            </div>
+            <div class="block-calc__row">
+                <div class="block-calc__col ">  <a href=""><button>Связаться с менеджером</button></a></div>
+                <div class="block-calc__col ">
+                    <div class="total-price">Всего:
+                        <span id="full-cost" onload="totalPrice()">0 </span> <span>&#8372</span>
+                    </div>
+                </div>
+              
+              
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
